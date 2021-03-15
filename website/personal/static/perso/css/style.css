@@ -1,0 +1,39 @@
+
+header{
+	
+	height: 140px;
+    padding-top: 60px;
+}
+
+}
+footer{
+	height: 250px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding-top: 8px;
+                font-family: monospace;
+}
+.col{      
+	padding-bottom: 10px;
+	background-color: teal;
+	text-align: center;
+
+              
+	}
+	
+.mySlides{
+     display:none;
+}
+.container{
+	align-content: center;
+}
+
+#img{
+	border-radius:7px;
+}
+#menu1{
+	background-color: #333;
+	color: black;
+
+}

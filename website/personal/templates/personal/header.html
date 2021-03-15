@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+
+<title>Ets</title>
+<meta charset="utf-8">
+{% load staticfiles %}
+
+    <link rel="stylesheet" href="{% static 'perso/css/style.css' %}" type = "text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link  rel="stylesheet" href="{% static 'perso/layout/styles/layout.css' %}" type="text/css" media="all">
+
+
+</head>
+<body background="static/perso/apple/bg2.jpg">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div >
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html">Easy Technical Support</a></h1>
+          <br>
+          <h2>ETS</h2>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="#">Home</a></li>
+          
+          
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+  <!-- ################################################################################################ -->
+ 
+  
+<center><div class="container">
+
+		<img id="img" class="mySlides w3-animate-top img-responsive"  src="{% static 'perso/apple/b11.jpg' %}" style="width:800px height:800px; min-width: 100px" align="center">
+  		<img id="img" class="mySlides w3-animate-left img-responsive" src="{% static 'perso/apple/b22.jpg' %}" style="width: 800px height:800px; min-width: 100px" align="center">
+  		<img id="img" class="mySlides w3-animate-bottom img-responsive" src="{% static 'perso/apple/b33.jpg' %}" style="width: 800px height:800px; min-width: 100px" align="center">
+  		<img id="img" class="mySlides w3-animate-right img-responsive" src="{% static 'perso/apple/b44.jpg' %}" style="width: 800px height:800px; min-width: 100px" align="center">
+  		
+  
+</div>
+</center>
+<!-- End Top Background Image Wrapper -->
+
+<!-- ################################################################################################ -->
+<div class="">
+  <main class="hoc container clear"> 
+    <!-- main body -->
+    <!-- ################################################################################################ -->
+    
+    <ul class="nospace group services">
+      <li class="one_third first active">
+        <article class="bgded" style="background-image:url('static/perso/demo/t1.jpg');">
+          <div class="txtwrap"><i class="block fa fa-4x"></i>
+            <h6 class="heading">User Tab</h6>
+            <p>For technical support..Choose this tab&hellip;</p>
+          </div>
+          <footer><a href="#">More &raquo;</a></footer>
+        </article>
+      </li>
+      
+      <li class="one_third active">
+        <article class="bgded" style=" background-image:url('static/perso/demo/t3.jpg');">
+          <div class="txtwrap"><i class="block fa fa-4x"></i>
+            <h6 class="heading">Technician Tab</h6>
+            <p>For registration and Other information&hellip;</p>
+          </div>
+          <footer><a href="#">More &raquo;</a></footer>
+        </article>
+      </li>
+      
+      <li class="one_third active">
+        <article class="bgded" style="background-image:url('static/perso/demo/t2.png');">
+          <div class="txtwrap"><i class="block fa fa-4x"></i>
+            <h6 class="heading">Other Services</h6>
+            <p>For important and emergency conatct numbers&hellip;</p>
+          </div>
+          <footer><a href="#">More &raquo;</a></footer>
+        </article>
+      </li>
+     
+    </ul>
+    <!-- ################################################################################################ -->
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+
+<!-- ################################################################################################ -->
+<div class="row">
+  
+<footer> 
+  <center>
+
+      <p><a href="http:\\www.facebook.com"><img src="{% static 'perso/demo/fb.png' %}" alt="facebook" style="border-radius: 5px;"></a></p>
+      <p style="color: white;">Contact us:- 9845368798</p>
+      
+      <p>Copyright &copy; ETS | <a href="#">www.ets.edu.np</a></p>
+  </center>
+    
+</footer> 
+</div>
+</body>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+
+</script>
+</html>
